@@ -2,6 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
+    "baseUrl": "..",
     "composite": false,
     "declaration": true,
     "declarationMap": true,
@@ -18,7 +19,10 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "paths": {
+      "@ui/*": ["sfac-design-kit/src/components/*"]
+    }
   },
   "exclude": ["node_modules"]
 }
